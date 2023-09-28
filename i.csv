@@ -1,0 +1,19 @@
+Interface,Contenu
+GigabitEthernet1/5,"shutdown
+ no nameif
+ no security-level
+ no ip address"
+GigabitEthernet1/6,"description Secbox
+ duplex full
+ nameif secbox
+ security-level 50
+ ip address 10.254.1.2 255.255.255.252"
+GigabitEthernet1/7,"shutdown
+ no nameif
+ no security-level
+ no ip address"
+GigabitEthernet1/8,"description Acces DTI via Innovation
+ nameif innov
+ security-level 0
+ ip address 10.196.32.5 255.255.252.0 
+!"
