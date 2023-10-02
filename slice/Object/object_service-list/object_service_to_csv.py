@@ -21,7 +21,7 @@ def object_service_to_csv(output_file, data):
             current_lines = []
         elif current_object_group is not None and not line.startswith("object"):
             current_lines.append(line)
-
+            
     if current_object_group is not None:
         result.append({"object-group": current_object_group, "lines": current_lines})
 

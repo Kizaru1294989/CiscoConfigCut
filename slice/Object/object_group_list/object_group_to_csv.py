@@ -14,6 +14,7 @@ def object_group_to_csv(output_file, data):
     result = []
     current_object_group = None
     current_lines = []
+    found_other = False
     for line in data:
         line = line.strip()
         if line.startswith(wordresearch):
@@ -21,7 +22,10 @@ def object_group_to_csv(output_file, data):
                 result.append({"object-group": current_object_group, "lines": current_lines})
             current_object_group = line
             current_lines = []
-        elif current_object_group is not None and not line.startswith("object") and not line.startswith("access-list") :
+            found_other = True
+        elif found_other and 'access-list' in line:
+            found_other = False 
+        elif current_object_group is not None and found_other :
             current_lines.append(line)
 
     if current_object_group is not None:

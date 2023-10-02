@@ -1,18 +1,17 @@
-interface-Names;content
-GigabitEthernet1/1;"shutdown;no nameif;no security-level;no ip address"
-GigabitEthernet1/2;"description Acces Cloud;duplex full;no nameif;no security-level;no ip address"
-GigabitEthernet1/2.10;"description VLAN Cloud Master;vlan 10;nameif cloud_master;security-level 80;ip address 10.20.10.1 255.255.255.0"
-GigabitEthernet1/2.20;"description VLAN Cloud Bureautique;vlan 20;nameif cloud_bureautique;security-level 50;ip address 10.20.20.1 255.255.255.0"
-GigabitEthernet1/2.21;"description VLAN Cloud Bureautique externe;vlan 21;nameif cloud_bureautique_externe;security-level 50;ip address 10.20.21.1 255.255.255.0"
-GigabitEthernet1/2.30;"description VLAN Cloud Innovation;vlan 30;nameif cloud_innovation;security-level 50;ip address 10.20.30.1 255.255.255.0"
-GigabitEthernet1/2.31;"description VLAN Cloud Innovation externe;vlan 31;nameif cloud_innovation_externe;security-level 50;ip address 10.20.31.1 255.255.255.0"
-GigabitEthernet1/2.40;"description VLAN Cloud ATM2;vlan 40;nameif cloud_atm2;security-level 20;ip address 10.20.40.1 255.255.255.0"
-GigabitEthernet1/2.41;"description VLAN Cloud ATM2 externe;vlan 41;nameif cloud_atm2_externe;security-level 50;ip address 10.20.41.1 255.255.255.0"
-GigabitEthernet1/2.254;"description VLAN Cloud Management;vlan 254;nameif cloud_management;security-level 100;ip address 10.20.254.1 255.255.255.0"
-GigabitEthernet1/3;"shutdown;no nameif;no security-level;no ip address"
-GigabitEthernet1/4;"shutdown;no nameif;no security-level;no ip address"
-GigabitEthernet1/5;"shutdown;no nameif;no security-level;no ip address"
-GigabitEthernet1/6;"description Secbox;duplex full;nameif secbox;security-level 50;ip address 10.254.1.2 255.255.255.252"
-GigabitEthernet1/7;"shutdown;no nameif;no security-level;no ip address"
-GigabitEthernet1/8;"description Acces DTI via Innovation;nameif innov;security-level 0;ip address 10.196.32.5 255.255.252.0"
-Management1/1;"management-only;shutdown;no nameif;no security-level;no ip address"
+Interface;State;Description;VLAN;Nameif;Security Level;IP;MASK
+GigabitEthernet1/1;shutdown;No;;;;;
+GigabitEthernet1/2;active;Acces;;;;;
+GigabitEthernet1/2.10;active;VLAN;10;cloud_master;80;10.20.10.1;255.255.255.0
+GigabitEthernet1/2.20;active;VLAN;20;cloud_bureautique;50;10.20.20.1;255.255.255.0
+GigabitEthernet1/2.21;active;VLAN;21;cloud_bureautique_externe;50;10.20.21.1;255.255.255.0
+GigabitEthernet1/2.30;active;VLAN;30;cloud_innovation;50;10.20.30.1;255.255.255.0
+GigabitEthernet1/2.31;active;VLAN;31;cloud_innovation_externe;50;10.20.31.1;255.255.255.0
+GigabitEthernet1/2.40;active;VLAN;40;cloud_atm2;20;10.20.40.1;255.255.255.0
+GigabitEthernet1/2.41;active;VLAN;41;cloud_atm2_externe;50;10.20.41.1;255.255.255.0
+GigabitEthernet1/2.254;active;VLAN;254;cloud_management;100;10.20.254.1;255.255.255.0
+GigabitEthernet1/3;shutdown;No;;;;;
+GigabitEthernet1/4;shutdown;No;;;;;
+GigabitEthernet1/5;shutdown;No;;;;;
+GigabitEthernet1/6;active;Secbox;;secbox;50;10.254.1.2;255.255.255.252
+GigabitEthernet1/7;shutdown;No;;;;;
+GigabitEthernet1/8;active;Acces;;innov;0;10.196.32.5;255.255.252.0

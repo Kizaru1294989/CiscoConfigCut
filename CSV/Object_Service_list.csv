@@ -1,0 +1,21 @@
+Object Service;Service;Destination;Description
+smtp;tcp;smtp(port);SMTP
+ntp;udp;ntp;NTP
+https;tcp;https;HTTPS
+rsyslog;tcp;601;SYSLOG
+ldaps;tcp;ldaps;LDAPS
+proxy;tcp;3128;Proxy SQUID
+ssh;tcp;ssh;SSH
+http_user;tcp;8080;http user pour installation coreos
+http;tcp;www;
+kerberos_tcp;tcp;88;
+kerberos_udp;udp;88;
+kerberos_passwd_tcp;tcp;464;
+kerberos_passwd_udp;udp;464;
+ldap;tcp;ldap;Cloud repository server
+kafka;tcp;6667;Load Balancer Innovation
+openshift;tcp;6443;API Openshift
+port_3022;tcp;3022;Port specifique inconnu
+isoda1;tcp;46152;API ISODA port 1
+isoda2;tcp;46153;API ISODA port 2
+isoda3;tcp;46154;API ISODA port 3
