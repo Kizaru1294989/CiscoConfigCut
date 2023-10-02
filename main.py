@@ -1,5 +1,5 @@
 from slice.cut import cut
-from test import test
+
 
 def main():
     print('Main Active !')
@@ -7,4 +7,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
