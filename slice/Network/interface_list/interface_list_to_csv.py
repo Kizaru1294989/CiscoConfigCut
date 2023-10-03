@@ -50,23 +50,50 @@ def interface_list_to_csv(output_file, data):
             
         elif in_interface_list_block:
             if line.startswith("description") :
-                current_description = line.split()[1]
+                if line.split()[1] == "VLAN":
+                    current_description = line.split()[1] + " "+ line.split()[2]+ " "+line.split()[3] 
+                else :
+                    description = line.split()[1:]
+                    description_string = ' '.join(description)
+                    current_description = description_string
+                    current_vlan = "NO VLAN"
+
               
                 current_state_interface = "active"
             elif line.startswith("shutdown") :
-                current_description = "No"
+                current_description = "No Description"
                 current_state_interface = "shutdown"
+                current_vlan = "NO VLAN"
+                
+          
                 
             elif line.startswith("vlan") :
-                current_vlan = line.split()[1]
+                current_vlan = "VLAN " +  line.split()[1]
+                
             elif line.startswith("nameif "):
                 current_nameif = line.split()[1]
+                
+            elif line.startswith("no")  :
+                if line.split()[1] == "nameif":
+                    current_nameif = "NO nameIf"
+                if line.split()[1] == "security-level":
+                    current_security_level = "NO security-level"
+                if line.split()[1] == "ip":
+                    current_IP_address = "NO ip address"
+                    current_Mask_address = " NO Mask"
+                
+                
             elif line.startswith("security-level") :
                 current_security_level = line.split()[1]
+                
+  
+            
             elif line.startswith("ip address"): # + MASK
                 current_Mask_address = line.split()[3]
-                current_IP_address = line.split()[2] 
+                current_IP_address = line.split()[2]
                 in_interface_list_block = False
+            
+                
 
     with open(Path, 'w', newline='') as csv_file:
         writer = csv.writer(csv_file, delimiter=';')
