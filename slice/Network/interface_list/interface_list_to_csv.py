@@ -1,6 +1,7 @@
 import csv
 import json
 import os
+from Mask.mask_cidr import masque_cidr
 
 wordresearch = 'interface'
 Folder = "CSV"
@@ -84,12 +85,12 @@ def interface_list_to_csv(output_file, data):
                 
                 
             elif line.startswith("security-level") :
-                current_security_level = line.split()[1]
+                current_security_level = "level " + line.split()[1]
                 
   
             
             elif line.startswith("ip address"): # + MASK
-                current_Mask_address = line.split()[3]
+                current_Mask_address = masque_cidr(line.split()[3])
                 current_IP_address = line.split()[2]
                 in_interface_list_block = False
             

@@ -1,6 +1,6 @@
 Object Network;Host;Mask;Description
-innovation;10.196.32.0;255.255.252.0;Reseau Innnovation
-bureautique;172.17.0.0;255.255.0.0;Reseau bureautique
+innovation;10.196.32.0;/22;Reseau Innnovation
+bureautique;172.17.0.0;/16;Reseau bureautique
 cloud_switch;10.20.254.254;/32;Switch du Cloud
 cloud_dns1;10.20.10.2;/32;DNS Cloud dns1
 cloud_dns2;10.20.10.3;/32;DNS Cloud dns2
@@ -36,11 +36,11 @@ sib_sftp;172.17.169.27;/32;Serveur SFTP pour backup etcd
 sib_aap_exec1;172.17.134.22;/32;SIB Ansible execution node
 sib_aap_exec2;172.17.134.23;/32;SIB Ansible execution node
 sib_aap_exec3;172.17.134.24;/32;SIB Ansible execution node
-cloud_master;10.20.10.0;255.255.255.0;Reseau Cloud Master
-cloud_bureautique;10.20.20.0;255.255.255.0;Reseau Cloud Bureautique
-cloud_innovation;10.20.30.0;255.255.255.0;Reseau Cloud Innovation
-cloud_atm2;10.20.40.0;255.255.255.0;Reseau Cloud ATM2
-cloud_management;10.20.254.0;255.255.255.0;Reseau Cloud Management
+cloud_master;10.20.10.0;/24;Reseau Cloud Master
+cloud_bureautique;10.20.20.0;/24;Reseau Cloud Bureautique
+cloud_innovation;10.20.30.0;/24;Reseau Cloud Innovation
+cloud_atm2;10.20.40.0;/24;Reseau Cloud ATM2
+cloud_management;10.20.254.0;/24;Reseau Cloud Management
 secbox_ipa2;10.0.255.223;/32;Serveur IPA Secbox secondaire
 ilo_lame0;10.20.254.23;/32;Synergy ILO Lame 0
 ilo_lame1;10.20.254.24;/32;Synergy ILO Lame 1
@@ -59,29 +59,30 @@ cloud_frame04_cmp2;10.20.254.4;/32;Openshift cluster oc_integ composer 2
 cloud_frame04_ov;10.20.254.5;/32;Openshift cluster oc_integ OneView
 sib_angelique1;172.17.193.247;/32;Angelique ldapds.lfpw.aviation
 sib_angelique2;172.17.193.240;/32;Angelique ldapds.lfpw.aviation-civile.gouv.fr
-cloud_bureautique_externe;10.20.21.0;255.255.255.0;
-cloud_innovation_externe;10.20.31.0;255.255.255.0;
-cloud_atm2_externe;10.20.41.0;255.255.255.0;
-hautpoul;10.200.14.49;/32;
-queribus;10.200.14.50;/32;
-montsegur;10.200.14.51;/32;
-aguilar;10.200.14.52;/32;
-lagarde;10.200.14.53;/32;
-puivert;10.200.14.55;/32;
-puilaurens;10.200.14.56;/32;
-termes;10.200.14.57;/32;
-saissac;10.200.14.58;/32;
-lastour;10.200.14.59;/32;
+cloud_bureautique_externe;10.20.21.0;/24;NO Description
+cloud_innovation_externe;10.20.31.0;/24;NO Description
+cloud_atm2_externe;10.20.41.0;/24;NO Description
+hautpoul;10.200.14.49;/32;NO Description
+queribus;10.200.14.50;/32;NO Description
+montsegur;10.200.14.51;/32;NO Description
+aguilar;10.200.14.52;/32;NO Description
+lagarde;10.200.14.53;/32;NO Description
+puivert;10.200.14.55;/32;NO Description
+puilaurens;10.200.14.56;/32;NO Description
+termes;10.200.14.57;/32;NO Description
+saissac;10.200.14.58;/32;NO Description
+lastour;10.200.14.59;/32;NO Description
 cloud_innov_lb;10.20.31.33;/32;Load Balancer Innovation
 innov_teleport;195.83.98.7;/32;Serveur Teleport
 oc_integ_console;10.20.10.9;/32;Console Openshift
 cloud_nuc01;10.20.254.10;/32;Nuc Admin
 innov_teleport_interne;10.196.32.140;/32;relais interne Teleport
 innov_adoga;10.196.33.126;/32;PC portable Nicolas Courtel
-cloud_isoda1;;;API ISODA port 1
-innov_hebergement;10.200.20.0;255.255.255.0;Hebergement Innovation
+cloud_isoda1;NO IP;NO MASK;NO description
+innov_hebergement;10.200.20.0;/24;Hebergement Innovation
 ilo_cmp1;10.20.254.8;/32;Synergy ILO Composer 1
 ilo_cmp2;10.20.254.9;/32;Synergy ILO Composer 2
 innov_rp;195.83.98.4;/32;Reverse proxy Nginx Innovation
 innov_balmo;10.196.33.169;/32;Administration William Lefevre
 innov_balni;10.196.33.170;/32;Administration Samuel de Sousa
+cloud_sib_lb;10.20.21.32;/32;Load Balancer Bureautique
