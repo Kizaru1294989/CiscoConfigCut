@@ -6,6 +6,10 @@ from Mask.mask_cidr import masque_cidr
 wordresearch = 'interface'
 Folder = "CSV"
 
+
+
+####MANAGMENT INTERFACE
+
 def interface_list_to_csv(output_file, data):
     print('interface list catch !')
     Path = os.path.join(Folder, output_file)
@@ -89,8 +93,8 @@ def interface_list_to_csv(output_file, data):
                 
   
             
-            elif line.startswith("ip address"): # + MASK
-                current_Mask_address = masque_cidr(line.split()[3])
+            elif line.startswith("ip address"): 
+                current_Mask_address = masque_cidr(line.split()[3]) # + MASK
                 current_IP_address = line.split()[2]
                 in_interface_list_block = False
             

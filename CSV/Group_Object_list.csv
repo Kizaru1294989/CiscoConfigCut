@@ -1,29 +1,29 @@
-object-group-Names;lines
-dti;"network-object object innovation;network-object object bureautique;network-object object innov_bastion;network-object object innov_hebergement"
-cloud;"network-object object cloud_master;network-object object cloud_bureautique;network-object object cloud_innovation;network-object object cloud_atm2;network-object object cloud_management;network-object object cloud_bureautique_externe;network-object object cloud_innovation_externe;network-object object cloud_atm2_externe"
-ilo_synergy;"network-object object ilo_lame0;network-object object ilo_lame1;network-object object ilo_lame2;network-object object ilo_lame3;network-object object ilo_lame4;network-object object ilo_lame5;network-object object ilo_lame6;network-object object ilo_lame7;network-object object ilo_lame8;network-object object ilo_lame9;network-object object ilo_cmp1;network-object object ilo_cmp2"
-cloud_dns;"network-object object cloud_dns1;network-object object cloud_dns2"
-oc_integ_master;"description Masters Openshift;network-object object oc_integ_master01;network-object object oc_integ_master02;network-object object oc_integ_master03"
-oc_integ_cluster;"description Tous les noeuds Openshift;network-object object oc_integ_master01;network-object object oc_integ_master02;network-object object oc_integ_master03;network-object object oc_integ_worker01;network-object object oc_integ_worker02;network-object object oc_integ_worker03;network-object object oc_integ_worker04;network-object object oc_integ_worker05;network-object object oc_integ_worker06;network-object object oc_integ_worker07"
-grp_cloud_proxy;"description Proxy cloud;network-object object cloud_proxy"
-cloud_vm_adm;"description Machines d'administration;network-object object cloud_vm_adm01;network-object object innov_sable;network-object object innov_moblo;network-object object cloud_vm_adm02;network-object object cloud_nuc01;network-object object innov_adoga;network-object object innov_balmo;network-object object innov_balni"
-cloud_vm_dev;network-object object cloud_vm_dev01
-ext_bastion_adm;"description Bastion externe administration;network-object object innov_bastion"
-ext_bastion_dev;"description Bastion externe developpeurs;network-object object innov_bastion"
-ext_proxy;"description Proxy externe;network-object object innov_proxy"
-ext_ntp;"description Serveur NTP externe;network-object object secbox_ipa1;network-object object secbox_ipa2"
-cloud_frame04_cmp;"network-object object cloud_frame04_cmp1;network-object object cloud_frame04_cmp2;network-object object cloud_frame04_ov"
-ext_syslog;"description Serveur syslog externe;network-object object secbox_syslog"
-ext_keycloak;"description Keycloak Angelique externe;network-object object innov_keycloak"
-ext_dns;"network-object object innov_dns01;network-object object innov_dns02;network-object object secbox_ipa1;network-object object secbox_ipa2"
-ext_smtp;"description Serveur SMTP externe;network-object object innov_smtp"
-ext_crl;"description Serveur CRL PKI externe;network-object object secbox_ipa1;network-object object secbox_ipa2"
-ext_aap_exec;"description Serveurs externes d'execution Ansible;network-object object sib_aap_exec1;network-object object sib_aap_exec2;network-object object sib_aap_exec3"
-ext_sftp;"description Serveur externe SFTP;network-object object sib_sftp"
-dns;"description DNS;service-object udp destination eq domain;service-object tcp destination eq domain"
-ext_adm_ipa;"network-object object secbox_ipa1;network-object object secbox_ipa2"
-ipa;"description Services IPA;service-object object https;service-object object http;service-object object kerberos_tcp;service-object object kerberos_udp;service-object object kerberos_passwd_udp;service-object object kerberos_passwd_tcp;service-object object ldap;service-object object ldaps"
-ext_angelique;"network-object object sib_angelique1;network-object object sib_angelique2"
-kafka_acropole;"network-object object hautpoul;network-object object queribus;network-object object montsegur;network-object object aguilar;network-object object lagarde;network-object object puivert;network-object object puilaurens;network-object object termes;network-object object saissac;network-object object lastour"
-isoda;"description API ISODA;service-object tcp destination eq 46152;service-object tcp destination eq 46153;service-object tcp destination eq 46154"
-cloud_lb;"network-object object cloud_innov_lb;network-object object cloud_sib_lb"
+Object-Group;Type;Description;Number Object;Object
+dti;network;NO Description;4 Group;innovation | bureautique | innov_bastion | innov_hebergement | 
+cloud;network;NO Description;8 Group;cloud_master | cloud_bureautique | cloud_innovation | cloud_atm2 | cloud_management | cloud_bureautique_externe | cloud_innovation_externe | cloud_atm2_externe | 
+ilo_synergy;network;NO Description;12 Group;ilo_lame0 | ilo_lame1 | ilo_lame2 | ilo_lame3 | ilo_lame4 | ilo_lame5 | ilo_lame6 | ilo_lame7 | ilo_lame8 | ilo_lame9 | ilo_cmp1 | ilo_cmp2 | 
+cloud_dns;network;NO Description;2 Group;cloud_dns1 | cloud_dns2 | 
+oc_integ_master;network;MastersOpenshift;3 Group;oc_integ_master01 | oc_integ_master02 | oc_integ_master03 | 
+oc_integ_cluster;network;TouslesnoeudsOpenshift;10 Group;oc_integ_master01 | oc_integ_master02 | oc_integ_master03 | oc_integ_worker01 | oc_integ_worker02 | oc_integ_worker03 | oc_integ_worker04 | oc_integ_worker05 | oc_integ_worker06 | oc_integ_worker07 | 
+grp_cloud_proxy;network;Proxycloud;1 Group;cloud_proxy | 
+cloud_vm_adm;network;Machinesd'administration;8 Group;cloud_vm_adm01 | innov_sable | innov_moblo | cloud_vm_adm02 | cloud_nuc01 | innov_adoga | innov_balmo | innov_balni | 
+cloud_vm_dev;network;NO Description;1 Group;cloud_vm_dev01 | 
+ext_bastion_adm;network;Bastionexterneadministration;1 Group;innov_bastion | 
+ext_bastion_dev;network;Bastionexternedeveloppeurs;1 Group;innov_bastion | 
+ext_proxy;network;Proxyexterne;1 Group;innov_proxy | 
+ext_ntp;network;ServeurNTPexterne;2 Group;secbox_ipa1 | secbox_ipa2 | 
+cloud_frame04_cmp;network;NO Description;3 Group;cloud_frame04_cmp1 | cloud_frame04_cmp2 | cloud_frame04_ov | 
+ext_syslog;network;Serveursyslogexterne;1 Group;secbox_syslog | 
+ext_keycloak;network;KeycloakAngeliqueexterne;1 Group;innov_keycloak | 
+ext_dns;network;NO Description;4 Group;innov_dns01 | innov_dns02 | secbox_ipa1 | secbox_ipa2 | 
+ext_smtp;network;ServeurSMTPexterne;1 Group;innov_smtp | 
+ext_crl;network;ServeurCRLPKIexterne;2 Group;secbox_ipa1 | secbox_ipa2 | 
+ext_aap_exec;network;Serveursexternesd'executionAnsible;3 Group;sib_aap_exec1 | sib_aap_exec2 | sib_aap_exec3 | 
+ext_sftp;network;ServeurexterneSFTP;1 Group;sib_sftp | 
+dns;service;DNS;2 Group;udp destination eq domain | tcp destination eq domain | 
+ext_adm_ipa;network;NO Description;2 Group;secbox_ipa1 | secbox_ipa2 | 
+ipa;service;ServicesIPA;8 Group;https | http | kerberos_tcp | kerberos_udp | kerberos_passwd_udp | kerberos_passwd_tcp | ldap | ldaps | 
+ext_angelique;network;NO Description;2 Group;sib_angelique1 | sib_angelique2 | 
+kafka_acropole;network;NO Description;10 Group;hautpoul | queribus | montsegur | aguilar | lagarde | puivert | puilaurens | termes | saissac | lastour | 
+isoda;service;APIISODA;3 Group;tcp destination eq 46152 | tcp destination eq 46153 | tcp destination eq 46154 | 
+cloud_lb;network;NO Description;3 Group;cloud_innov_lb | cloud_sib_lb | extended permit object ntp any object-group ext_ntp | 

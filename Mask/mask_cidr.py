@@ -1,6 +1,3 @@
-
-
-
 def masque_cidr(masque):
     octets = masque.split('.')
     bits_a_un = 0
