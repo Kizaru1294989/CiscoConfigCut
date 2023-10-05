@@ -1,0 +1,86 @@
+List Name;Access;Port Source;IP Source;Port Destination;IP Destination
+master-in;permit;obj ntp;any;NO;grp-obj ext_ntp
+master-in;permit;obj smtp;any;NO;grp-obj ext_smtp
+master-in;permit;obj rsyslog;any;NO;grp-obj ext_syslog
+master-in;permit;obj ldaps;any;NO;grp-obj ext_angelique
+master-in;permit;grp-obj ipa;any;NO;grp-obj ext_adm_ipa
+master-in;permit;obj https;any;NO;grp-obj ext_crl
+master-in;permit;obj http;any;NO;obj cloud_reposerver
+master-in;permit;obj https;any;NO;obj innov_teleport
+master-in;permit;dns;grp-obj cloud_dns;NO;grp-obj ext_dns
+master-in;permit;obj https;grp-obj oc_integ_cluster;NO;grp-obj ext_keycloak
+master-in;permit;obj ssh;grp-obj oc_integ_master;NO;grp-obj ext_sftp
+master-in;permit;obj proxy;grp-obj grp_cloud_proxy;NO;grp-obj ext_proxy
+master-in;permit;obj https;grp-obj grp_cloud_proxy;NO;grp-obj cloud
+master-in;permit;obj ssh;grp-obj cloud_vm_adm;NO;grp-obj cloud
+master-in;permit;obj https;grp-obj cloud_vm_adm;NO;grp-obj cloud
+master-in;permit;udp;any;eq syslog;any
+master-in;deny;ip;any;any;any
+dti-in;permit;obj ssh;grp-obj cloud_vm_adm;NO;grp-obj cloud
+dti-in;permit;obj https;grp-obj cloud_vm_adm;NO;grp-obj cloud
+dti-in;permit;obj ssh;grp-obj ext_aap_exec;NO;grp-obj cloud
+dti-in;permit;obj https;grp-obj ext_aap_exec;NO;grp-obj cloud
+dti-in;permit;obj ssh;grp-obj ext_bastion_adm;NO;grp-obj cloud_vm_adm
+dti-in;permit;obj ssh;grp-obj ext_bastion_dev;NO;grp-obj cloud_vm_dev
+dti-in;permit;obj https;obj innovation;NO;obj oc_integ_innov_vip
+dti-in;permit;obj ssh;obj bureautique;NO;grp-obj cloud_vm_dev
+dti-in;permit;obj https;obj bureautique;NO;obj oc_integ_sib_vip
+dti-in;permit;obj https;obj bureautique;NO;obj oc_integ_vip
+dti-in;permit;obj https;grp-obj dti;NO;grp-obj cloud_lb
+dti-in;permit;grp-obj isoda;grp-obj dti;NO;grp-obj cloud_lb
+dti-in;permit;obj https;obj innov_rp;NO;obj cloud_innov_lb
+dti-in;permit;grp-obj dns;grp-obj dti;NO;obj cloud_innov_lb
+dti-in;permit;obj port_3022;obj innov_teleport;NO;grp-obj cloud
+dti-in;permit;obj openshift;obj bureautique;NO;grp-obj cloud
+dti-in;permit;obj openshift;obj innovation;NO;grp-obj cloud
+dti-in;permit;obj https;obj innov_teleport;NO;grp-obj cloud
+dti-in;permit;obj ssh;obj innov_teleport;NO;grp-obj cloud
+dti-in;permit;obj https;grp-obj dti;NO;grp-obj cloud
+dti-in;deny;ip;any;any;any
+cloud-in;permit;obj ntp;any;NO;grp-obj ext_ntp
+cloud-in;permit;obj smtp;any;NO;grp-obj ext_smtp
+cloud-in;permit;obj rsyslog;any;NO;grp-obj ext_syslog
+cloud-in;permit;grp-obj ipa;any;NO;grp-obj ext_adm_ipa
+cloud-in;permit;obj https;any;NO;grp-obj ext_crl
+cloud-in;permit;obj http;any;NO;obj cloud_reposerver
+cloud-in;permit;obj ldaps;any;NO;grp-obj ext_angelique
+cloud-in;permit;grp-obj dns;any;NO;grp-obj cloud_dns
+cloud-in;permit;obj proxy;any;NO;grp-obj grp_cloud_proxy
+cloud-in;permit;obj kafka;any;NO;grp-obj kafka_acropole
+cloud-in;permit;obj kafka;obj cloud_innovation;NO;grp-obj kafka_acropole
+cloud-in;deny;ip;any;any;any
+master-out;permit;grp-obj dns;any;NO;grp-obj cloud_dns
+master-out;permit;obj ssh;grp-obj ext_bastion_adm;NO;grp-obj cloud_dns
+master-out;permit;obj ssh;grp-obj ext_bastion_adm;NO;grp-obj cloud_dns
+master-out;permit;obj https;grp-obj ext_aap_exec;NO;grp-obj cloud_dns
+master-out;permit;obj ssh;grp-obj ext_aap_exec;NO;grp-obj cloud_dns
+master-out;permit;obj ssh;grp-obj cloud_vm_adm;NO;grp-obj cloud_dns
+master-out;permit;obj https;obj innov_teleport;NO;obj oc_integ_console
+master-out;permit;obj https;grp-obj dti;NO;obj oc_integ_console
+master-out;permit;obj proxy;obj cloud_management;NO;grp-obj grp_cloud_proxy
+master-out;permit;obj openshift;obj innov_teleport_interne;NO;obj oc_integ_console
+master-out;permit;obj openshift;obj innov_teleport;NO;obj oc_integ_console
+master-out;permit;obj port_3022;obj innov_teleport;NO;obj oc_integ_console
+master-out;deny;ip;any;any;any
+dti-out;permit;ip;any;any;any
+management-in;permit;grp-obj dns;any;NO;grp-obj cloud_dns
+management-in;permit;obj http;any;NO;obj cloud_reposerver
+management-in;permit;obj http_user;grp-obj ilo_synergy;NO;grp-obj cloud_vm_adm
+management-in;permit;obj proxy;any;NO;grp-obj grp_cloud_proxy
+management-in;permit;obj ssh;grp-obj cloud_frame04_cmp;NO;grp-obj ext_sftp
+management-in;deny;ip;any;any;any
+management-out;permit;obj ssh;grp-obj cloud_vm_adm;NO;any
+management-out;permit;obj ssh;grp-obj ext_aap_exec;NO;any
+management-out;permit;obj https;grp-obj ext_aap_exec;NO;any
+management-out;permit;obj https;grp-obj cloud_vm_adm;NO;grp-obj cloud
+management-out;permit;ip;grp-obj cloud;NO;grp-obj ext_dns
+management-out;deny;ip;any;any;any
+secbox-out;permit;ip;any;any;any
+secbox-in;deny;ip;any;any;any
+cloud-out;permit;ip;grp-obj cloud;NO;grp-obj ext_dns
+cloud-out;permit;obj https;grp-obj dti;NO;grp-obj cloud_lb
+cloud-out;permit;obj openshift;grp-obj dti;NO;grp-obj cloud
+cloud-out;permit;obj https;obj innov_rp;NO;obj cloud_innov_lb
+cloud-out;permit;obj https;obj innov_teleport;NO;obj cloud_innov_lb
+cloud-out;permit;grp-obj isoda;grp-obj dti;NO;obj cloud_innov_lb
+cloud-out;deny;ip;any;any;any

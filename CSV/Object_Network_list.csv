@@ -1,0 +1,88 @@
+Object Network;Host;Mask;Description
+innovation;10.196.32.0;/22;Reseau Innnovation
+bureautique;172.17.0.0;/16;Reseau bureautique
+cloud_switch;10.20.254.254;/32;Switch du Cloud
+cloud_dns1;10.20.10.2;/32;DNS Cloud dns1
+cloud_dns2;10.20.10.3;/32;DNS Cloud dns2
+oc_integ_master01;10.20.10.12;/32;OpenShift cluster oc integ master01
+oc_integ_master02;10.20.10.13;/32;OpenShift cluster oc integ master02
+oc_integ_master03;10.20.10.14;/32;OpenShift cluster oc integ master03
+oc_integ_worker01;10.20.10.15;/32;OpenShift cluster oc integ worker01
+oc_integ_worker02;10.20.10.16;/32;OpenShift cluster oc integ worker02
+oc_integ_worker03;10.20.10.17;/32;OpenShift cluster oc integ worker03
+oc_integ_worker04;10.20.10.18;/32;OpenShift cluster oc integ worker04
+oc_integ_worker05;10.20.10.19;/32;OpenShift cluster oc integ worker05
+oc_integ_worker06;10.20.10.20;/32;OpenShift cluster oc integ worker06
+oc_integ_worker07;10.20.10.21;/32;OpenShift cluster oc integ worker07
+oc_integ_api_vip;10.20.10.10;/32;OpenShift cluster oc integ VIP API
+oc_integ_sib_vip;10.20.20.11;/32;OpenShift cluster oc integ VIP SIB
+oc_integ_innov_vip;10.20.30.11;/32;OpenShift cluster oc integ VIP INNOV
+oc_integ_atm2_vip;10.20.40.11;/32;OpenShift cluster oc integ VIP ATM2
+cloud_vm_adm01;10.20.10.123;/32;VM admin 01
+cloud_vm_dev01;10.20.10.234;/32;VM dev 01
+oc_integ_vip;10.20.10.11;/32;OpenShift cluster oc integ VIP DEV
+cloud_proxy;10.20.10.4;/32;Proxy Cloud
+innov_bastion;195.83.98.80;/32;Bastion Passhport Innovation
+innov_dns01;10.196.32.89;/32;Serveur DNS01 Innovation
+innov_dns02;10.196.32.91;/32;Serveur DNS02 Innovation
+innov_keycloak;195.83.98.90;/32;Keycloak Angelique
+innov_proxy;10.196.32.107;/32;Proxy Innovation
+innov_smtp;10.196.32.90;/32;Relais SMTP Innovation
+innov_sable;10.196.33.160;/32;Administration Nicolas Courtel
+innov_moblo;10.200.20.36;/32;Administration Innovation
+secbox_ipa1;10.0.255.226;/32;Serveur IPA Secbox
+secbox_syslog;10.0.255.225;/32;Serveur syslog Secbox
+sib_sftp;172.17.169.27;/32;Serveur SFTP pour backup etcd
+sib_aap_exec1;172.17.134.22;/32;SIB Ansible execution node
+sib_aap_exec2;172.17.134.23;/32;SIB Ansible execution node
+sib_aap_exec3;172.17.134.24;/32;SIB Ansible execution node
+cloud_master;10.20.10.0;/24;Reseau Cloud Master
+cloud_bureautique;10.20.20.0;/24;Reseau Cloud Bureautique
+cloud_innovation;10.20.30.0;/24;Reseau Cloud Innovation
+cloud_atm2;10.20.40.0;/24;Reseau Cloud ATM2
+cloud_management;10.20.254.0;/24;Reseau Cloud Management
+secbox_ipa2;10.0.255.223;/32;Serveur IPA Secbox secondaire
+ilo_lame0;10.20.254.23;/32;Synergy ILO Lame 0
+ilo_lame1;10.20.254.24;/32;Synergy ILO Lame 1
+ilo_lame2;10.20.254.25;/32;Synergy ILO Lame 2
+ilo_lame3;10.20.254.26;/32;Synergy ILO Lame 3
+ilo_lame4;10.20.254.27;/32;Synergy ILO Lame 4
+ilo_lame5;10.20.254.28;/32;Synergy ILO Lame 5
+ilo_lame6;10.20.254.29;/32;Synergy ILO Lame 6
+ilo_lame7;10.20.254.30;/32;Synergy ILO Lame 7
+ilo_lame8;10.20.254.31;/32;Synergy ILO Lame 8
+ilo_lame9;10.20.254.32;/32;Synergy ILO Lame 9
+cloud_reposerver;10.20.10.6;/32;Cloud repository server
+cloud_vm_adm02;10.20.10.124;/32;VM admin 02 AlmaLinux
+cloud_frame04_cmp1;10.20.254.3;/32;Openshift cluster oc_integ composer 1
+cloud_frame04_cmp2;10.20.254.4;/32;Openshift cluster oc_integ composer 2
+cloud_frame04_ov;10.20.254.5;/32;Openshift cluster oc_integ OneView
+sib_angelique1;172.17.193.247;/32;Angelique ldapds.lfpw.aviation
+sib_angelique2;172.17.193.240;/32;Angelique ldapds.lfpw.aviation-civile.gouv.fr
+cloud_bureautique_externe;10.20.21.0;/24;NO
+cloud_innovation_externe;10.20.31.0;/24;NO
+cloud_atm2_externe;10.20.41.0;/24;NO
+hautpoul;10.200.14.49;/32;NO
+queribus;10.200.14.50;/32;NO
+montsegur;10.200.14.51;/32;NO
+aguilar;10.200.14.52;/32;NO
+lagarde;10.200.14.53;/32;NO
+puivert;10.200.14.55;/32;NO
+puilaurens;10.200.14.56;/32;NO
+termes;10.200.14.57;/32;NO
+saissac;10.200.14.58;/32;NO
+lastour;10.200.14.59;/32;NO
+cloud_innov_lb;10.20.31.33;/32;Load Balancer Innovation
+innov_teleport;195.83.98.7;/32;Serveur Teleport
+oc_integ_console;10.20.10.9;/32;Console Openshift
+cloud_nuc01;10.20.254.10;/32;Nuc Admin
+innov_teleport_interne;10.196.32.140;/32;relais interne Teleport
+innov_adoga;10.196.33.126;/32;PC portable Nicolas Courtel
+cloud_isoda1;NO;NO;NO
+innov_hebergement;10.200.20.0;/24;Hebergement Innovation
+ilo_cmp1;10.20.254.8;/32;Synergy ILO Composer 1
+ilo_cmp2;10.20.254.9;/32;Synergy ILO Composer 2
+innov_rp;195.83.98.4;/32;Reverse proxy Nginx Innovation
+innov_balmo;10.196.33.169;/32;Administration William Lefevre
+innov_balni;10.196.33.170;/32;Administration Samuel de Sousa
+cloud_sib_lb;10.20.21.32;/32;Load Balancer Bureautique

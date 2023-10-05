@@ -185,7 +185,7 @@ def access_list_to_csv(output_file, data):
                     port = line.split()[7:]
                     port_dest = ' '.join(port)
                     ip = line.split()[6]
-                    print(port)
+                    #print(port)
                     
                     #udp
                     if port_dest != "":
