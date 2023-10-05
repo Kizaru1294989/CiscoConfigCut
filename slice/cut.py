@@ -12,7 +12,6 @@ file = read(sourcefilepath)
 def cut():
     object_service_list_to_csv('Object_Service_list.csv',file)
     object_network_list_to_csv('Object_Network_list.csv',file)
-    
     object_group_to_csv('Group_Object_list.csv',file)
     access_group_list_to_csv('Access_Group_list.csv',file)
     interface_list_to_csv('Interface_list.csv',file)
