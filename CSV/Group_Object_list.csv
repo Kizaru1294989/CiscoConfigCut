@@ -1,29 +1,29 @@
 Object-Group;Type;Description;Number Object;Object
-dti;network;NO Description;4 Group;innovation | bureautique | innov_bastion | innov_hebergement | 
-cloud;network;NO Description;8 Group;cloud_master | cloud_bureautique | cloud_innovation | cloud_atm2 | cloud_management | cloud_bureautique_externe | cloud_innovation_externe | cloud_atm2_externe | 
-ilo_synergy;network;NO Description;12 Group;ilo_lame0 | ilo_lame1 | ilo_lame2 | ilo_lame3 | ilo_lame4 | ilo_lame5 | ilo_lame6 | ilo_lame7 | ilo_lame8 | ilo_lame9 | ilo_cmp1 | ilo_cmp2 | 
-cloud_dns;network;NO Description;2 Group;cloud_dns1 | cloud_dns2 | 
+dti;network;NO;4 Group;innovation | bureautique | innov_bastion | innov_hebergement | 
+cloud;network;NO;8 Group;cloud_master | cloud_bureautique | cloud_innovation | cloud_atm2 | cloud_management | cloud_bureautique_externe | cloud_innovation_externe | cloud_atm2_externe | 
+ilo_synergy;network;NO;12 Group;ilo_lame0 | ilo_lame1 | ilo_lame2 | ilo_lame3 | ilo_lame4 | ilo_lame5 | ilo_lame6 | ilo_lame7 | ilo_lame8 | ilo_lame9 | ilo_cmp1 | ilo_cmp2 | 
+cloud_dns;network;NO;2 Group;cloud_dns1 | cloud_dns2 | 
 oc_integ_master;network;MastersOpenshift;3 Group;oc_integ_master01 | oc_integ_master02 | oc_integ_master03 | 
 oc_integ_cluster;network;TouslesnoeudsOpenshift;10 Group;oc_integ_master01 | oc_integ_master02 | oc_integ_master03 | oc_integ_worker01 | oc_integ_worker02 | oc_integ_worker03 | oc_integ_worker04 | oc_integ_worker05 | oc_integ_worker06 | oc_integ_worker07 | 
 grp_cloud_proxy;network;Proxycloud;1 Group;cloud_proxy | 
 cloud_vm_adm;network;Machinesd'administration;8 Group;cloud_vm_adm01 | innov_sable | innov_moblo | cloud_vm_adm02 | cloud_nuc01 | innov_adoga | innov_balmo | innov_balni | 
-cloud_vm_dev;network;NO Description;1 Group;cloud_vm_dev01 | 
+cloud_vm_dev;network;NO;1 Group;cloud_vm_dev01 | 
 ext_bastion_adm;network;Bastionexterneadministration;1 Group;innov_bastion | 
 ext_bastion_dev;network;Bastionexternedeveloppeurs;1 Group;innov_bastion | 
 ext_proxy;network;Proxyexterne;1 Group;innov_proxy | 
 ext_ntp;network;ServeurNTPexterne;2 Group;secbox_ipa1 | secbox_ipa2 | 
-cloud_frame04_cmp;network;NO Description;3 Group;cloud_frame04_cmp1 | cloud_frame04_cmp2 | cloud_frame04_ov | 
+cloud_frame04_cmp;network;NO;3 Group;cloud_frame04_cmp1 | cloud_frame04_cmp2 | cloud_frame04_ov | 
 ext_syslog;network;Serveursyslogexterne;1 Group;secbox_syslog | 
 ext_keycloak;network;KeycloakAngeliqueexterne;1 Group;innov_keycloak | 
-ext_dns;network;NO Description;4 Group;innov_dns01 | innov_dns02 | secbox_ipa1 | secbox_ipa2 | 
+ext_dns;network;NO;4 Group;innov_dns01 | innov_dns02 | secbox_ipa1 | secbox_ipa2 | 
 ext_smtp;network;ServeurSMTPexterne;1 Group;innov_smtp | 
 ext_crl;network;ServeurCRLPKIexterne;2 Group;secbox_ipa1 | secbox_ipa2 | 
 ext_aap_exec;network;Serveursexternesd'executionAnsible;3 Group;sib_aap_exec1 | sib_aap_exec2 | sib_aap_exec3 | 
 ext_sftp;network;ServeurexterneSFTP;1 Group;sib_sftp | 
 dns;service;DNS;2 Group;udp destination eq domain | tcp destination eq domain | 
-ext_adm_ipa;network;NO Description;2 Group;secbox_ipa1 | secbox_ipa2 | 
+ext_adm_ipa;network;NO;2 Group;secbox_ipa1 | secbox_ipa2 | 
 ipa;service;ServicesIPA;8 Group;https | http | kerberos_tcp | kerberos_udp | kerberos_passwd_udp | kerberos_passwd_tcp | ldap | ldaps | 
-ext_angelique;network;NO Description;2 Group;sib_angelique1 | sib_angelique2 | 
-kafka_acropole;network;NO Description;10 Group;hautpoul | queribus | montsegur | aguilar | lagarde | puivert | puilaurens | termes | saissac | lastour | 
+ext_angelique;network;NO;2 Group;sib_angelique1 | sib_angelique2 | 
+kafka_acropole;network;NO;10 Group;hautpoul | queribus | montsegur | aguilar | lagarde | puivert | puilaurens | termes | saissac | lastour | 
 isoda;service;APIISODA;3 Group;tcp destination eq 46152 | tcp destination eq 46153 | tcp destination eq 46154 | 
-cloud_lb;network;NO Description;3 Group;cloud_innov_lb | cloud_sib_lb | extended permit object ntp any object-group ext_ntp | 
+cloud_lb;network;NO;3 Group;cloud_innov_lb | cloud_sib_lb | extended permit object ntp any object-group ext_ntp | 

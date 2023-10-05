@@ -30,7 +30,7 @@ def object_network_list_to_csv(output_file, data):
             add_current_object_network()  # Save the current object network
             current_object_network = line
             current_host = None
-            current_description = "NO Description"
+            current_description = "NO"
             current_mask = None
             in_network_block = True
         elif in_network_block:
@@ -52,9 +52,9 @@ def object_network_list_to_csv(output_file, data):
                 current_description = line[len("description "):]
                 in_network_block = False
             else:
-                current_host = "NO IP"
-                current_mask = "NO MASK"
-                current_description = "NO description"
+                current_host = "NO"
+                current_mask = "NO"
+                current_description = "NO"
                 in_network_block = False
 
     add_current_object_network()  # Save the last object network

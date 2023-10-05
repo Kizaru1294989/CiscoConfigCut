@@ -1,21 +1,21 @@
-Object Service;Service;Destination;Description
-smtp;tcp;smtp(port);SMTP
-ntp;udp;ntp;NTP
-https;tcp;https;HTTPS
-rsyslog;tcp;601;SYSLOG
-ldaps;tcp;ldaps;LDAPS
-proxy;tcp;3128;Proxy SQUID
-ssh;tcp;ssh;SSH
-http_user;tcp;8080;http user pour installation coreos
-http;tcp;www;
-kerberos_tcp;tcp;88;
-kerberos_udp;udp;88;
-kerberos_passwd_tcp;tcp;464;
-kerberos_passwd_udp;udp;464;
-ldap;tcp;ldap;Cloud repository server
-kafka;tcp;6667;Load Balancer Innovation
-openshift;tcp;6443;API Openshift
-port_3022;tcp;3022;Port specifique inconnu
-isoda1;tcp;46152;API ISODA port 1
-isoda2;tcp;46153;API ISODA port 2
-isoda3;tcp;46154;API ISODA port 3
+Object Service;Service;Description
+smtp;tcp destination eq smtp(port); SMTP
+ntp;udp destination eq ntp; NTP
+https;tcp destination eq https; HTTPS
+rsyslog;tcp destination eq 601; SYSLOG
+ldaps;tcp destination eq ldaps; LDAPS
+proxy;tcp destination eq 3128; Proxy SQUID
+ssh;tcp destination eq ssh; SSH
+http_user;tcp destination eq 8080; http user pour installation coreos
+http;tcp destination eq www;NO
+kerberos_tcp;tcp destination eq 88;NO
+kerberos_udp;udp destination eq 88;NO
+kerberos_passwd_tcp;tcp destination eq 464;NO
+kerberos_passwd_udp;udp destination eq 464;NO
+ldap;tcp destination eq ldap; Cloud repository server
+kafka;tcp destination eq 6667; Load Balancer Innovation
+openshift;tcp destination eq 6443; API Openshift
+port_3022;tcp destination eq 3022; Port specifique inconnu
+isoda1;tcp destination eq 46152; API ISODA port 1
+isoda2;tcp destination eq 46153; API ISODA port 2
+isoda3;tcp destination eq 46154; API ISODA port 3

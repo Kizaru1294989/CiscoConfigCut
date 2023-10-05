@@ -59,26 +59,26 @@ cloud_frame04_cmp2;10.20.254.4;/32;Openshift cluster oc_integ composer 2
 cloud_frame04_ov;10.20.254.5;/32;Openshift cluster oc_integ OneView
 sib_angelique1;172.17.193.247;/32;Angelique ldapds.lfpw.aviation
 sib_angelique2;172.17.193.240;/32;Angelique ldapds.lfpw.aviation-civile.gouv.fr
-cloud_bureautique_externe;10.20.21.0;/24;NO Description
-cloud_innovation_externe;10.20.31.0;/24;NO Description
-cloud_atm2_externe;10.20.41.0;/24;NO Description
-hautpoul;10.200.14.49;/32;NO Description
-queribus;10.200.14.50;/32;NO Description
-montsegur;10.200.14.51;/32;NO Description
-aguilar;10.200.14.52;/32;NO Description
-lagarde;10.200.14.53;/32;NO Description
-puivert;10.200.14.55;/32;NO Description
-puilaurens;10.200.14.56;/32;NO Description
-termes;10.200.14.57;/32;NO Description
-saissac;10.200.14.58;/32;NO Description
-lastour;10.200.14.59;/32;NO Description
+cloud_bureautique_externe;10.20.21.0;/24;NO
+cloud_innovation_externe;10.20.31.0;/24;NO
+cloud_atm2_externe;10.20.41.0;/24;NO
+hautpoul;10.200.14.49;/32;NO
+queribus;10.200.14.50;/32;NO
+montsegur;10.200.14.51;/32;NO
+aguilar;10.200.14.52;/32;NO
+lagarde;10.200.14.53;/32;NO
+puivert;10.200.14.55;/32;NO
+puilaurens;10.200.14.56;/32;NO
+termes;10.200.14.57;/32;NO
+saissac;10.200.14.58;/32;NO
+lastour;10.200.14.59;/32;NO
 cloud_innov_lb;10.20.31.33;/32;Load Balancer Innovation
 innov_teleport;195.83.98.7;/32;Serveur Teleport
 oc_integ_console;10.20.10.9;/32;Console Openshift
 cloud_nuc01;10.20.254.10;/32;Nuc Admin
 innov_teleport_interne;10.196.32.140;/32;relais interne Teleport
 innov_adoga;10.196.33.126;/32;PC portable Nicolas Courtel
-cloud_isoda1;NO IP;NO MASK;NO description
+cloud_isoda1;NO;NO;NO
 innov_hebergement;10.200.20.0;/24;Hebergement Innovation
 ilo_cmp1;10.20.254.8;/32;Synergy ILO Composer 1
 ilo_cmp2;10.20.254.9;/32;Synergy ILO Composer 2

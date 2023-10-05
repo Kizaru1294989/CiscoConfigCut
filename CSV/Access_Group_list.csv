@@ -1,4 +1,4 @@
-Situation;Type; Name 
+Situation;Type;Interface
 dti-in;in;innov
 dti-out;out;innov
 cloud-in;in;cloud_bureautique_externe

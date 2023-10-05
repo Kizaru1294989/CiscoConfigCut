@@ -31,7 +31,7 @@ def object_group_to_csv(output_file, data):
                                "Object" : current_object,
                                })
             current_object_group = line
-            current_description = "NO Description"
+            current_description = "NO"
             current_object = ""
             current_object_number = 0
             current_type = line.split()[1]
